@@ -55,8 +55,8 @@ reader.question("What would you like to calculate?", function(input){
 	
 	} if (mathSymbol !== "+", "-", "/", "*", "^2", "^3", "mod") {
 		strSplit = String(mathSymbol);
-		abc = strSplit.split('');
-		power = Number(abc[1])
+		powerArray = strSplit.split('');
+		power = Number(powerArray[1]);
 		console.log(Math.pow(num1, power));
 		console.log(Math.pow(num2, power));
 		console.log(Math.pow(num3,power));
