@@ -22,15 +22,23 @@ reader.question("What would you like to calculate?", function(input){
 	console.log('num3', num3);
 
 	if (mathSymbol === "+") {
+		console.log(num1 + num2);
+	} else {
 		console.log(num1 + num2 + num3);
 	}
 	if (mathSymbol === "-" ) {
+		console.log(num1 - num2);
+	} else {
 		console.log(num1 - num2 - num3);
 	}
 	if (mathSymbol === "/") {
+		console.log(num1 / num2);
+	} else {
 		console.log(num1 / num2 / num3);
 	}
 	if (mathSymbol === "*") {
+		console.log(num1 * num2);
+	} else {
 		console.log(num1 * num2 * num3);
 	}
 	if (mathSymbol === "mod"){
