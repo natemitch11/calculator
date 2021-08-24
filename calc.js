@@ -23,22 +23,22 @@ reader.question("What would you like to calculate?", function(input){
 
 	if (mathSymbol === "+") {
 		console.log(num1 + num2);
-	} else {
+	} else if (mathSymbol ==="+"){
 		console.log(num1 + num2 + num3);
 	}
 	if (mathSymbol === "-" ) {
 		console.log(num1 - num2);
-	} else {
+	} else if (mathSymbol === "-"){
 		console.log(num1 - num2 - num3);
 	}
 	if (mathSymbol === "/") {
 		console.log(num1 / num2);
-	} else {
+	} else if (mathSymbol ==="/"){
 		console.log(num1 / num2 / num3);
 	}
 	if (mathSymbol === "*") {
 		console.log(num1 * num2);
-	} else {
+	} else if (mathSymbol === "*"){
 		console.log(num1 * num2 * num3);
 	}
 	if (mathSymbol === "mod"){
@@ -49,21 +49,10 @@ reader.question("What would you like to calculate?", function(input){
 		console.log(Math.sqrt(num1));
 		console.log(Math.sqrt(num2));
 		console.lot(Math.sqrt(num3));
-	} 
-	if (mathSymbol === "^2") {
-		console.log(Math.pow(num1,2));
-		console.log(Math.pow(num2,2));
-		console.log(Math.pow(num3,2));
-	} 
-	if 
-		(mathSymbol === "^3") {
-		console.log(Math.pow(num1,3));
-		console.log(Math.pow(num2,3));
-		console.log(Math.pow(num3,3));
-	
-	} if (mathSymbol !== "+", "-", "/", "*", "^2", "^3", "mod") {
+	}
+	if (mathSymbol.includes ("^")) {
 		strSplit = String(mathSymbol);
-		powerArray = strSplit.split('');
+		powerArray = strSplit.split('^');
 		power = Number(powerArray[1]);
 		console.log(Math.pow(num1, power));
 		console.log(Math.pow(num2, power));
